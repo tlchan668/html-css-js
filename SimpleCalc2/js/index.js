@@ -30,5 +30,21 @@ const cl = ()=>{
 const display = ()=>{
     
     document.getElementById("ans").value=ans;
-    document.getElementById("inp2").value=0;
+    document.getElementById("inp2").value="";
+    if(ans % 3 == 0){
+        document.getElementById("ans").style.color = "green";
+    }else {
+        document.getElementById("ans").style.color = "black";
+    }
+    //gregs way
+    //var ansCtrl = document.getElementById("ans");
+    //ansCtrl.value = ans;
+    //var ansStyle = ansCtrl.style;
+    //if (ans %3 == 0){
+        //ansStyle.color = "green";
+    //}else{
+        //ansStyle.color = "black";
+    //}    
+       
+    
 }
